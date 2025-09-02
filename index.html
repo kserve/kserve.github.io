@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting to KServe Documentation</title>
+    <link rel="canonical" href="https://kserve.github.io/website/" />
+    <meta name="robots" content="noindex,follow" />
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=website/" />
+    </noscript>
+    <script>
+        (function () {
+            // Only redirect from the root path to avoid accidental loops.
+            if (location.pathname === '/' || location.pathname === '') {
+                var target = 'website/' + (location.search || '') + (location.hash || '');
+                location.replace(target);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    Redirecting to the <a href="website/">KServe documentation</a>...
+</body>
+
+</html>
